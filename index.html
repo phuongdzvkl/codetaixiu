@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Web Tài Xiu</title>
+</head>
+
+<body>
+    <audio id="background-music" src="music/nhacnen.mp3" loop autoplay></audio>
+    <div class="form-tx">
+        <img class="icon-sound" src="/icon/iconSound.png"></img>
+        <cre>Duong Duc Phuong</cre>
+        <div id="coin">0</div>
+        <div id="noti-system"></div>
+        <div class="block-tai">
+            <div class="elm-name-block">TÀI</div>
+            <div class="total-bet-tai total-bet">0</div>
+            <button class="button-bet-tai button-bet button-sound" choiceValue="tai">CƯỢC</button>
+        </div>
+        <div class="plate-tx">
+            <div class="dice-first dice">6</div>
+            <div class="dice-second dice">6</div>
+            <div class="dice-third dice">6</div>
+        </div>
+
+        <div class="block-xiu">
+            <div class="elm-name-block">XỈU</div>
+            <div class="total-bet-xiu total-bet">0</div>
+            <button class="button-bet-tai button-bet button-sound" choiceValue="xiu">CƯỢC</button>
+
+        </div>
+
+        <div id="bet-table">
+            <button class="bet disabled button-sound" coinValue="1000">1000</button>
+            <button class="bet disabled button-sound" coinValue="5000">5000</button>
+            <button class="bet disabled button-sound" coinValue="10000">10000</button>
+            <button class="bet disabled button-sound" coinValue="50000">50000</button>
+            <button class="bet disabled button-sound" coinValue="100000">100000</button>
+            <button class="bet disabled button-sound" coinValue="200000">200000</button>
+            <button class="bet disabled button-sound" coinValue="500000">500000</button>
+        </div>
+        <div class="button-main">
+            <button class="button-allin button-m disabled button-sound">ALL IN</button>
+            <button class="button-cuoc button-m disabled button-sound">ĐẶT CƯỢC</button>
+        </div>
+        <input type="text" class="ogift">
+        <button class="gift button-sound">gift</button>
+        <div class="plate-move"></div>
+        <div class="icon-sound"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

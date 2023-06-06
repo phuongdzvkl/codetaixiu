@@ -1,0 +1,266 @@
+ body {
+     width: 70%;
+     margin: auto;
+     background-color: #333333;
+ }
+
+ .icon-sound {
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 2%;
+ }
+
+ cre {
+     position: absolute;
+     bottom: 1%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 20px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+     pointer-events: none;
+     cursor: not-allowed;
+     opacity: 0.2;
+ }
+
+ .gift {
+     border: none;
+     background: none;
+     position: absolute;
+     right: 23%;
+     font-size: 20px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+     cursor: pointer;
+ }
+
+ .ogift {
+     position: absolute;
+     top: 5px;
+     right: 26%;
+     border-radius: 10px;
+     border: none;
+
+ }
+
+ .form-tx {
+     margin-top: 10%;
+     position: relative;
+     width: 1000px;
+     height: 500px;
+     background-color: #ff0000;
+     border-radius: 400px;
+ }
+
+
+ #coin {
+     position: absolute;
+     top: 5px;
+     left: 20%;
+     font-size: 20px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+
+ }
+
+ #noti-system {
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     top: 10%;
+     text-align: center;
+     font-size: 20px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ .block-tai {
+     position: absolute;
+     top: 40%;
+     transform: translateY(-50%);
+     left: 20%;
+ }
+
+ .block-xiu {
+     position: absolute;
+     top: 40%;
+     transform: translateY(-50%);
+     right: 20%;
+ }
+
+ .elm-name-block {
+     font-size: 70px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ .total-bet {
+     margin: 20px;
+     font-size: 30px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ .button-bet {
+     display: inline-block;
+     padding: 10px 34px;
+     background-color: #ffffff;
+     color: #ff0000;
+     border: 2px solid #ffffff;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     text-transform: uppercase;
+     text-decoration: none;
+     text-align: center;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ .button-bet-click {
+     background-color: #ff0000;
+     color: #ffffff;
+ }
+
+ .button-bet:hover {
+     background-color: #ff0000;
+     color: #ffffff;
+ }
+
+ .button-bet:focus {
+     outline: none;
+ }
+
+ .plate-tx {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     background-color: #ffffff;
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .plate-move {
+     width: 230px;
+     height: 230px;
+     background-color: #ff0000;
+     border-radius: 50%;
+     position: absolute;
+     outline: 3px solid #ffffff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     left: 50%;
+     top: 40%;
+     transform: translate(-50%, -50%);
+     cursor: move;
+     user-select: none;
+     text-align: center;
+     line-height: 230px;
+     font-size: 100px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+
+ }
+
+ .dice {
+     margin: 5px;
+     width: 50px;
+     height: 50px;
+     border-radius: 20px;
+     padding: 10px;
+     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+
+     text-align: center;
+     line-height: 50px;
+     font-size: 40px;
+     font-weight: bold;
+     color: #252222;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ #bet-table {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     bottom: 18%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+ }
+
+ .bet {
+     margin: 10px;
+     width: 70px;
+     height: 30px;
+     background-color: #ffffff;
+     color: #0a0a0a;
+     border: 2px solid #ffffff;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     text-transform: uppercase;
+     text-decoration: none;
+     text-align: center;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
+ .bet:hover {
+     background-color: #ff0000;
+     color: #ffffff;
+ }
+
+ .disabled {
+     pointer-events: none;
+     cursor: not-allowed;
+     opacity: 0.5;
+ }
+
+ .button-main {
+     position: absolute;
+     bottom: 3%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .button-m {
+     background-color: #ffffff;
+     width: 170px;
+     height: 60px;
+     padding: 10px 34px;
+     background-color: #ffffff;
+     color: #ff0000;
+     border: 2px solid #ffffff;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     text-transform: uppercase;
+     text-decoration: none;
+     text-align: center;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     text-shadow: 1px 1px 2px #000000;
+
+ }
+
+ .button-m:hover {
+     background-color: #ff0000;
+     color: #ffffff;
+ }
