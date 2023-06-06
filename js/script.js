@@ -19,24 +19,59 @@ const plateMove = document.querySelector('.plate-move');
 let setX = 0;
 let setY = 0;
 let isDragging = false;
-plateMove.addEventListener('mousedown', (event) => {
+
+plateMove.addEventListener('mousedown', handleMouseDown);
+plateMove.addEventListener('touchstart', handleTouchStart);
+
+document.addEventListener('mousemove', handleMouseMove);
+document.addEventListener('touchmove', handleTouchMove);
+
+document.addEventListener('mouseup', handleMouseUp);
+document.addEventListener('touchend', handleTouchEnd);
+
+function handleMouseDown(event) {
     isDragging = true;
     setX = event.clientX - plateMove.offsetLeft;
     setY = event.clientY - plateMove.offsetTop;
+}
 
-});
-document.addEventListener('mousemove', (event) => {
-
+function handleMouseMove(event) {
     if (isDragging) {
         let x = event.clientX - setX;
         let y = event.clientY - setY;
         plateMove.style.left = x + 'px';
         plateMove.style.top = y + 'px';
     }
-});
-document.addEventListener('mouseup', (event) => {
+}
+
+function handleMouseUp() {
     isDragging = false;
-})
+}
+
+function handleTouchStart(event) {
+    event.preventDefault();
+    isDragging = true;
+    const touch = event.touches[0];
+    setX = touch.clientX - plateMove.offsetLeft;
+    setY = touch.clientY - plateMove.offsetTop;
+}
+
+function handleTouchMove(event) {
+    event.preventDefault();
+    if (isDragging) {
+        const touch = event.touches[0];
+        let x = touch.clientX - setX;
+        let y = touch.clientY - setY;
+        plateMove.style.left = x + 'px';
+        plateMove.style.top = y + 'px';
+    }
+}
+
+function handleTouchEnd() {
+    isDragging = false;
+}
+
+
 // set 30s 1 turn
 const plateShowtime = document.querySelector('.plate-move');
 let setInter;
@@ -192,8 +227,8 @@ buttonAllin.addEventListener('click', (event) => {
 });
 // xử lí hiệu ứng âm thanh âm thanh của tất cả button
 const buttonSound = document.querySelectorAll('.button-sound');
-buttonSound.forEach((button)=> {
-    button.addEventListener('click',()=> {
+buttonSound.forEach((button) => {
+    button.addEventListener('click', () => {
         const audio = new Audio('audioclick/click.wav');
         audio.play();
     });
@@ -202,16 +237,16 @@ buttonSound.forEach((button)=> {
 let isPlaying = false;
 function playMusic() {
     var audio = document.getElementById("background-music");
-    if(isPlaying) {
+    if (isPlaying) {
         audio.pause();
         isPlaying = false;
-    }else {
+    } else {
         audio.play();
         isPlaying = true;
     }
 }
 
 const iconSound = document.querySelector('.icon-sound');
-iconSound.addEventListener('click',()=> {
+iconSound.addEventListener('click', () => {
     playMusic();
 });
