@@ -1,14 +1,14 @@
  body {
-    display: flex;
-    justify-content: center;
+     display: flex;
+     justify-content: center;
      background-color: #333333;
  }
 
  .icon-sound {
-    position: absolute;
-    top: 2%;
-    left: 80%;
-    width: 2%;
+     position: absolute;
+     top: 2%;
+     left: 80%;
+     width: 2%;
  }
 
  cre {
@@ -47,7 +47,7 @@
  }
 
  .form-tx {
-    margin-top: 10%;
+     margin-top: 10%;
      position: relative;
      width: 1000px;
      height: 500px;
@@ -154,27 +154,27 @@
      transform: translate(-50%, -50%);
  }
 
- 
-.plate-move {
-        width: 230px;
-        height: 230px;
-        background-color: #ff0000;
-        border-radius: 50%;
-        position: absolute;
-        border: 3px solid #ffffff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -50%);
-        cursor: move;
-        user-select: none;
-        text-align: center;
-        line-height: 230px;
-        font-size: 100px;
-        font-weight: bold;
-        color: #ffffff;
-        text-shadow: 1px 1px 2px #000000;
-    }
+
+ .plate-move {
+     width: 230px;
+     height: 230px;
+     background-color: #ff0000;
+     border-radius: 50%;
+     position: absolute;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #ffffff;
+     left: 50%;
+     top: 40%;
+     transform: translate(-50%, -50%);
+     cursor: move;
+     user-select: none;
+     text-align: center;
+     line-height: 230px;
+     font-size: 100px;
+     font-weight: bold;
+     color: #ffffff;
+     text-shadow: 1px 1px 2px #000000;
+ }
+
  .dice {
      margin: 5px;
      width: 50px;
