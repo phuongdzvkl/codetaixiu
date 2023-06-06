@@ -45,10 +45,6 @@
  }
 
  .form-tx {
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%);
-     margin-top: 10%;
      position: relative;
      width: 1000px;
      height: 500px;
