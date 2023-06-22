@@ -81,8 +81,8 @@ const noti = document.querySelector('#noti-system');
 const SystemTurnTime = () => {
     if (timeStart < 1) {
         DiceRamdon();
-        buttonBet.forEach(button => {
-            button.classList.add('disabled');
+        buttonBet.forEach(btn => {
+            btn.classList.add('disabled');
         });
         noti.innerText = 'System: Đã xáo xúc xắc, vui lòng mở bát'
         clearInterval(setInter);
@@ -236,7 +236,7 @@ buttonSound.forEach((button) => {
         audio.play();
     });
 });
-// xử lí nhạcc
+// xử lí nhạc
 let isPlaying = false;
 function playMusic() {
     var audio = document.getElementById("background-music");
