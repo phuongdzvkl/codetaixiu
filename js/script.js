@@ -81,6 +81,9 @@ const noti = document.querySelector('#noti-system');
 const SystemTurnTime = () => {
     if (timeStart < 1) {
         DiceRamdon();
+        buttonBet.forEach(button => {
+            button.classList.add('disabled');
+        });
         noti.innerText = 'System: Đã xáo xúc xắc, vui lòng mở bát'
         clearInterval(setInter);
     };
@@ -214,7 +217,7 @@ const gift = document.querySelector('.gift');
 const ogift = document.querySelector('.ogift');
 gift.addEventListener('click', (event) => {
     if (ogift.value === 'phuongdz') {
-        myCoin += 9999;
+        myCoin += 10000000;
         tagCoin.innerText = myCoin;
     }
 });
@@ -233,7 +236,7 @@ buttonSound.forEach((button) => {
         audio.play();
     });
 });
-// xử lí nhạc
+// xử lí nhạcc
 let isPlaying = false;
 function playMusic() {
     var audio = document.getElementById("background-music");
